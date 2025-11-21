@@ -1,0 +1,70 @@
+/* .mainDiv{
+    width: 100%;
+ 
+    display: flex;
+       align-content: center;
+} */
+
+
+.mainDiv{
+  display: flex;
+  align-items: center;
+  align-content: center;
+
+}
+
+
+.sampleDivTag{
+  box-shadow: 7px 7px 12px #202020;
+    width: 400px;
+    height: 400px;
+    /* background-color: #C0C0C0; */
+    background-image: url('/home/vignesh/Desktop/frontend-class(10pm)/Space-Background-Images.jpg');
+    border: solid 1px black;
+    /* margin-left: 100px; */
+  position: relative; 
+    left: 300px;
+    top: 50px; 
+    border-radius: 10px;
+    /* align-content: center; */
+}
+
+#loginH1{
+  text-align: center;
+  padding-bottom: 0px;
+  position: relative;
+  top: 20px;
+  color: white;
+
+}
+
+#name{
+  width: 300px;
+  margin-left: 50px;
+  margin-bottom: 50px;
+  margin-top: 20px;
+  height: 50px;
+  padding: 20px;
+  border-radius: 10px;
+  border-style: none;
+  
+}
+
+#password{
+  margin-left: 50px;
+  margin-right: 50px;
+  width: 300px;
+  height: 50px;
+  padding: 20px;
+   border-radius: 10px;
+  border-style: none;
+}
+
+#btn{
+  margin-left: 150px;
+  margin-top: 50px;
+  width:100px;
+  height: 50px;
+   border-radius: 20px;
+  border-style: none;
+}
