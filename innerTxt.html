@@ -1,0 +1,33 @@
+<head>
+
+</head>
+<body>
+    
+    <h1 id="sampleH1"></h1>
+    <p id="paraContent"></p>
+    <div id="divContent"></div>
+    <div id="listContent"></div>
+  <script>
+         const obj = {
+            name: "vignesh",
+            mobile: 2324243,
+            mailId: "adasd@gmail.com"
+        }
+        let doc = document.getElementById("sampleH1");
+        console.log("doc content", doc);
+        // doc.textContent = obj.name;
+        doc.textContent = `Hi welcome ${obj.name}`;
+
+        let para = document.getElementById("paraContent");
+        para.textContent = `Welcome to my new ecom website and you will expore and learn more on this ${obj.mailId}`
+
+        let div = document.getElementById("divContent");
+        div.innerHTML = "<h1>Hi welcome back man</h1>";
+
+        let li = document.getElementById("listContent");
+        li.innerHTML = "<ul><li>Name</li><li>Number</li><li>Email ID</li></ul>"
+
+
+    </script>
+ 
+</body>
