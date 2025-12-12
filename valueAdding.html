@@ -1,0 +1,129 @@
+<head>
+
+</head>
+<body>
+    
+    <h1 id="sampleH1"></h1>
+    <p id="paraContent"></p>
+    <div id="divContent"></div>
+    <div id="listContent"></div>
+    <table id="TableContent"></table>
+    <button onclick="createTable()">createH1Tag</button>
+
+  <script>
+         const obj = {
+            name: "vignesh",
+            mobile: 2324243,
+            mailId: "adasd@gmail.com"
+        }
+
+        const list = [
+            {name: "vignesh",
+            mobile: 2324243,
+            age: 20,
+            mailId: "adasd@gmail.com"},
+             {name: "kumar",
+            mobile: 2324243,
+            age: 25,
+            mailId: "adasd@gmail.com"},
+             {name: "gsdfsdf",
+            mobile: 2324243,
+            age: 18,
+            mailId: "adasd@gmail.com"}
+        ]
+
+        let filteredUser = list.filter((e) => e.age >= 16);
+        console.log(filteredUser);
+        if(filteredUser.length == 0){
+            console.log("cannot able to filter the user")
+        }else{
+             console.log(filteredUser);
+        }
+        
+        let findedUser = list.find((e) => e.name === "vignes");
+        if(typeof findedUser =="undefined"){
+            console.log("user details not found");
+        }else{
+            console.log(findedUser);
+        }
+
+        let mappedUser = list.filter((e) => e.age > 18).map((e1) => e1.name);
+        console.log(mappedUser);
+
+
+
+
+
+        let doc = document.getElementById("sampleH1");
+        console.log("doc content", doc);
+        // doc.textContent = obj.name;
+        doc.textContent = `Hi welcome ${obj.name}`;
+
+        let para = document.getElementById("paraContent");
+        para.textContent = `Welcome to my new ecom website and you will expore and learn more on this ${obj.mailId}`
+
+        let div = document.getElementById("divContent");
+        div.innerHTML = "<h1>Hi welcome back man</h1>";
+
+        // let li = document.getElementById("listContent");
+        // li.innerHTML = "<ul><li>Name</li><li>Number</li><li>Email ID</li></ul>"
+
+        function creatingElement(){
+            let li = document.getElementById("listContent");
+            let sample = document.createElement("h1");
+            sample.textContent = "Hi this content loaded from create element concept";
+            li.append(sample);
+
+        }
+
+
+        function createTable(){
+            let table = document.getElementById("TableContent");
+            let tab = document.createElement("tr");
+            let tr = document.createElement("th");
+            tr.textContent = "S.NO";
+             let tab1 = document.createElement("tr");
+            let td = document.createElement("td");
+            td.textContent = 1;
+            tab.append(tr);
+            tab1.append(td);
+            table.append(tab);
+             table.append(tab1);
+
+        }
+
+
+        const str = "Hi Welcome"
+
+        console.log(str.toUpperCase());
+        console.log(str.toLowerCase());
+        console.log(str.includes("Welcome"));
+          console.log(str.startsWith("Welcome"));
+
+          console.log(str.indexOf("Welcome"));
+
+          console.log(str.substring(0,3));
+          console.log(str.substring(3));
+        console.log(str.charAt(3));
+
+        console.log(str.slice(0,2));
+
+        console.log(str.replace("Hi", "Hello"));
+
+        const finalOpt = "laptop,phone,ram";
+        console.log(finalOpt.split(",")); 
+        console.log(finalOpt.split("")); 
+
+        const arr = ["laptop", "phone", "ram"];
+        console.log(arr.join(", "));
+
+        // creatingElement();
+
+        const num = "10";
+        const num1 = "Hello";
+        console.log(parseInt(num));
+        console.log(isNaN(num1));
+
+    </script>
+ 
+</body>
